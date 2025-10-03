@@ -1,0 +1,39 @@
+[workspace]
+members = [
+    "crates/core",
+    "crates/ml",
+    "crates/data",
+    "crates/utils",
+]
+resolver = "2"
+
+[workspace.dependencies]
+linfa = "0.6.0"
+linfa-trees = "0.6.0"
+ndarray = "0.15.6"
+polars = { version = "0.34.2", features = ["lazy", "csv"] }
+log = "0.4.20"
+env_logger = "0.10.0"
+anyhow = "1.0.75"
+
+# Local Crates
+ratb-core = { path = "crates/core" }
+ratb-ml = { path = "crates/ml" }
+ratb-data = { path = "crates/data" }
+ratb-utils = { path = "crates/utils" }
+
+# Root package for running examples
+[package]
+name = "rust-ai-trading-bot"
+version = "0.1.0"
+edition = "2021"
+authors = ["Gabriel Demetrios Lafis"]
+
+[dependencies]
+anyhow = { workspace = true }
+ratb-core = { workspace = true }
+ratb-data = { workspace = true }
+ratb-ml = { workspace = true }
+ratb-utils = { workspace = true }
+polars = { workspace = true }
+

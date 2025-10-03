@@ -1,0 +1,13 @@
+[package]
+name = "ratb-ml"
+version = "0.1.0"
+edition = "2021"
+authors = ["Gabriel Demetrios Lafis"]
+
+[dependencies]
+linfa = { workspace = true }
+linfa-trees = { workspace = true }
+ndarray = { workspace = true }
+polars = { workspace = true, features = ["ndarray"] }
+log = { workspace = true }
+

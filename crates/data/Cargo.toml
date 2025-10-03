@@ -1,0 +1,10 @@
+[package]
+name = "ratb-data"
+version = "0.1.0"
+edition = "2021"
+authors = ["Gabriel Demetrios Lafis"]
+
+[dependencies]
+polars = { workspace = true }
+anyhow = { workspace = true }
+

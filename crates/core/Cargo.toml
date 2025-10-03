@@ -1,0 +1,13 @@
+[package]
+name = "ratb-core"
+version = "0.1.0"
+edition = "2021"
+authors = ["Gabriel Demetrios Lafis"]
+
+[dependencies]
+log = { workspace = true }
+ratb-data = { path = "../data" }
+ratb-ml = { path = "../ml" }
+polars = { workspace = true, features = ["ndarray"] }
+anyhow = { workspace = true }
+
