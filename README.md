@@ -1,5 +1,10 @@
 # rust-ai-trading-bot
 
+![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white)
+![License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)
+![ML](https://img.shields.io/badge/linfa-ML-brightgreen.svg?style=for-the-badge)
+![AI](https://img.shields.io/badge/AI-trading-yellow.svg?style=for-the-badge)
+
 **An intelligent trading bot using machine learning in Rust to predict market movements.**
 
 ---
