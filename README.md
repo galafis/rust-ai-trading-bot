@@ -125,6 +125,12 @@ fn main() -> Result<()> {
 
 The bot follows a modular ML pipeline architecture:
 
+<div align="center">
+  <img src="docs/ml_pipeline.png" alt="ML Pipeline" width="700"/>
+</div>
+
+### Pipeline Flow
+
 ```
 ┌──────────────┐      ┌──────────────┐      ┌──────────────┐
 │  Data Load   │ ───> │   Training   │ ───> │  Prediction  │

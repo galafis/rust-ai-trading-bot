@@ -1,0 +1,45 @@
+graph TB
+    subgraph "Data Preparation"
+        Load[Load Market Data]
+        Features[Extract Features:<br/>• Price Action<br/>• Volume<br/>• Technical Indicators]
+        Split[Train/Test Split]
+    end
+    
+    subgraph "Model Training"
+        Tree[Decision Tree<br/>Classifier]
+        Train[Train Model]
+        Validate[Cross-Validation]
+    end
+    
+    subgraph "Prediction"
+        NewData[New Market Data]
+        Predict[Generate Predictions]
+        Signals[Trading Signals:<br/>BUY / SELL]
+    end
+    
+    subgraph "Execution"
+        Strategy[Trading Strategy]
+        Orders[Execute Orders]
+    end
+    
+    Load --> Features
+    Features --> Split
+    Split --> Tree
+    Tree --> Train
+    Train --> Validate
+    Validate --> Predict
+    NewData --> Predict
+    Predict --> Signals
+    Signals --> Strategy
+    Strategy --> Orders
+    
+    style Load fill:#e1f5ff
+    style Features fill:#e1f5ff
+    style Split fill:#e1f5ff
+    style Tree fill:#fff4e1
+    style Train fill:#fff4e1
+    style Validate fill:#fff4e1
+    style Predict fill:#ffe1f5
+    style Signals fill:#ffe1f5
+    style Strategy fill:#e8f5e9
+    style Orders fill:#e8f5e9
