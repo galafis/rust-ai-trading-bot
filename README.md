@@ -36,6 +36,22 @@
 
 `rust-ai-trading-bot` is an **intelligent trading bot** that uses **machine learning** to predict buy and sell signals. Built entirely in Rust with the `linfa` library, it combines **high performance** with **artificial intelligence** for market analysis and automated decision-making.
 
+```mermaid
+flowchart LR
+    A[Market Feed\nOHLCV Data] --> B[Feature Extraction\nRSI / MA / Volume]
+    B --> C[ML Model\nDecision Tree Linfa]
+    C --> D[Signal\nBuy / Sell / Hold]
+    D --> E[Order Management\nPosition Sizing]
+    E --> F[Execution\nTrade Output]
+
+    style A fill:#000000,color:#fff
+    style B fill:#1a73e8,color:#fff
+    style C fill:#0f9d58,color:#fff
+    style D fill:#f4b400,color:#000
+    style E fill:#db4437,color:#fff
+    style F fill:#7b1fa2,color:#fff
+```
+
 ### ✨ Key Features
 
 - 🧠 **Machine Learning** - Decision Tree model for signal classification
